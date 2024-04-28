@@ -6,13 +6,13 @@
 %define		pnam	DMARC
 Summary:	Mail::DMARC - Perl implementation of DMARC
 Name:		perl-Mail-DMARC
-Version:	1.20230215
+Version:	1.20240314
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Mail/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c319eaaad4630dae8b919d10cd376afd
+# Source0-md5:	ecd5055af5262b65872b47ab86956fb9
 URL:		https://metacpan.org/release/Mail-DMARC
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -28,9 +28,11 @@ BuildRequires:	perl-DBD-SQLite >= 1.31
 BuildRequires:	perl-Email-MIME
 BuildRequires:	perl-Email-Sender >= 1.300032
 BuildRequires:	perl-Email-Simple
+BuildRequires:	perl-File-Copy-Recursive
 BuildRequires:	perl-File-ShareDir >= 1.00
 BuildRequires:	perl-IO-Socket-SSL
 BuildRequires:	perl-Net-DNS
+BuildRequires:	perl-Net-DNS-Resolver-Mock
 BuildRequires:	perl-Net-IP
 BuildRequires:	perl-Net-SSLeay
 BuildRequires:	perl-Regexp-Common >= 2013031301
